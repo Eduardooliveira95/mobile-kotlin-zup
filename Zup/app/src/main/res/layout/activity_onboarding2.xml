@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeZup"
+    tools:context=".ui.Onboarding2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/voltar_amarelo" />
+
+                <TextView
+                    android:id="@+id/tv_skip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/pular"
+                    android:textColor="@color/amareloZup"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="664dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/imagemOnboarding"
+                    android:src="@mipmap/onboarding2" />
+
+
+                <TextView
+                    style="@style/tituloOnboarding"
+                    android:text="@string/rede_social_onde_voc_pode_come_ar">
+
+                </TextView>
+
+                <TextView
+                    style="@style/textoOnboarding"
+                    android:text="@string/o_cadastro_gr_tis_comece_agora_o_seu_primeiro_passo_para_o_mercado_financeiro">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/proximoOnboarding2"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@color/amareloZup"
+                android:gravity="center"
+                android:onClick="proximoOnboarding2"
+                android:text="@string/continuar"
+                android:textColor="@color/verdeZup"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

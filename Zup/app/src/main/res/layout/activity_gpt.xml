@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeZup"
+    tools:context=".ui.Gpt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--MEIO-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="#D7EAF0"
+                        android:text="IAZUP"
+                        android:textSize="30sp" />
+
+                    <View
+                        android:id="@+id/line_3"
+                        android:layout_width="390dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/line_3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fa_a_a_sua_pergunta_para_zupia_sobre_a_noticia"
+                            android:textColor="#D7EAF0"
+                            android:textSize="30dp" />
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etPerguntaGpt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#D7EAF0"
+                        android:hint="|"
+                        android:shadowColor="@color/verdeZup"
+                        android:textColor="@color/white"
+                        android:textColorHint="#013440" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/etConfirmarPergunta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/continuar"
+                            android:textColor="@color/amareloZup"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tvRespostaGpt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="40dp"
+                            android:textColor="@color/amareloZup"
+                            android:textSize="25sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+        <!--FIM-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/botao_backgroud"
+            android:elevation="2dp"
+            app:menu="@menu/botao_menu"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_deslizar"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
